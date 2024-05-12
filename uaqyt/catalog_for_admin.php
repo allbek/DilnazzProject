@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -8,7 +9,7 @@
     <?php require('partials/header.php') ?>
 
   
-    <div class="container">
+    <div class="content">
         <h1>Админ-панель</h1>
         <div class="buttons">
             <a href="catalog_of_classes.php" class="btn">Расписание учеников</a>

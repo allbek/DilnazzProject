@@ -1,0 +1,136 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+}
+/* Style for the navigation bar */
+.navbar {
+    background-color: #ffffff; /* Dark blue background */
+    overflow: hidden; /* Ensures the content fits in the navbar */
+    display: flex; /* Aligns items in a row */
+    justify-content: center; /* Aligns items to the center of the container */
+    padding: 10px 20px; /* Padding around the navbar */
+}
+
+.content {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Style for list items */
+.navbar li {
+    list-style-type: none; /* Removes bullet points from list items */
+    flex-grow: 0; /* Makes list items evenly distribute width */
+    text-align: center; /* Centers text within list items */
+    padding: 0 10px; /* Reduced spacing between items */
+}
+
+/* Style for links */
+.navbar a.nav-link {
+    text-decoration: none; /* Removes underline from links */
+    color: #000000; /* Light grey text color for better visibility */
+    font-size: 16px; /* Sets the font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.navbar a.nav-link:hover {
+    color: #73c0ff; /* Changes text color on hover */
+}
+
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Style for table headers */
+th {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style for table cells */
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for odd rows */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Style for the button */
+button {
+    background-color: #e0e0e0; /* Light grey background color */
+    border: none; /* No border */
+    color: #333; /* Dark grey text color */
+    padding: 8px 15px; /* Reduced padding around the text */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline-block element */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer; /* Cursor style */
+    border-radius: 3px; /* Slightly rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #d0d0d0; /* Slightly darker grey background color on hover */
+}
+
+/* Style for the form */
+form {
+    max-width: 400px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center-align the form */
+    padding: 20px; /* Add padding around the form */
+    background-color: #fff; /* White background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style for form headings */
+form h2 {
+    margin-bottom: 20px; /* Add spacing below the heading */
+    color: #333; /* Dark grey text color */
+}
+
+/* Style for form inputs */
+form input[type="text"],
+form textarea {
+    width: 100%; /* Set input width to 100% of the container */
+    padding: 10px; /* Add padding to inputs */
+    margin-bottom: 15px; /* Add spacing between inputs */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 3px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Style for form button */
+form button[type="submit"] {
+    background-color: #4caf50; /* Green background color */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline-block element */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    border-radius: 3px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the form button */
+form button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green background color on hover */
+}
