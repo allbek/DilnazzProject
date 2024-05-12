@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Админ-панель расписания</title>
     <link rel="stylesheet" href="style.css">
-
+</head>
 <body>
     <?php require('partials/globals.php') ?>
     <?php require('partials/header.php') ?>

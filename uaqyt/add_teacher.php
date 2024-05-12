@@ -11,7 +11,7 @@
 
     <?php require('partials/header.php') ?>
 
-    <div>
+    <div class="content">
         <h2>Добавить учителя</h2>
         <form action="" method="POST">
             <label for="login">Логин:</label>

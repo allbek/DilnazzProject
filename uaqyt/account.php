@@ -12,7 +12,7 @@
     <?php require('partials/header.php') ?>
 
     <!-- Секция управления учетной записью -->
-    <div>
+    <div class="content">
         <h1>Управление учетной записью</h1>
         <!-- Отображение информации о пользователе -->
         <?php
@@ -62,7 +62,5 @@
             }
         ?>
     </div>
-
-    <?php require('partials/footer.php') ?>
 </body>
 </html>

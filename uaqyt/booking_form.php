@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отправка запроса о встече</title>
+    <title>Отправка запроса о встрече</title>
     <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <?php require('partials/globals.php'); ?>
     <?php require('partials/header.php'); ?>
