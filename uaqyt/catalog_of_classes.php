@@ -3,27 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Управление расписанием</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            table-layout: fixed; /* Улучшает контроль ширины колонок */
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        select, input[type="submit"] {
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <?php require('partials/globals.php') ?>

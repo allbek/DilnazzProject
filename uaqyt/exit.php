@@ -15,7 +15,7 @@
             // Unsetting and destroying session data
             session_unset();
             session_destroy();
-            header("Location: ../qrintent_new_version/index.php");
+            header("Location: ../uaqyt/index.php");
             ?>
         </div>
     </section>
