@@ -47,8 +47,5 @@
         }
     ?>
 
-    <!-- Including footer PHP file -->
-    <?php require('partials/footer.php') ?>
-
 </body>
 </html>

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Управление учетной записью</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -48,7 +46,7 @@
                     echo "<td>" . $row['userlogin'] . "</td>";
                     echo "<td>" . $row['userfullname'] . "</td>";
                     echo "<td>";
-                    echo "<form method='POST' action=''>";
+                    echo "<form method='POST' class='passwordform' action=''>";
                     echo "<input type='text' name='userpassword' value='" . $row['userpassword'] . "'>";
                     echo "<input type='hidden' name='userID' value='" . $row['userID'] . "'>";
                     echo "<button type='submit' class='btn' name='update'>Обновить</button>";

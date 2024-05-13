@@ -4,7 +4,9 @@ body {
     padding: 0;
     font-family: "Noto Sans", sans-serif;
     background-color: #f4f4f4; /* Light grey background */
+    
 }
+
 /* Style for the navigation bar */
 .navbar {
     background-color: #ffffff; /* Dark blue background */
@@ -15,7 +17,8 @@ body {
 }
 
 .content {
-    margin-top: 20px; /* Adjust as needed */
+    margin: 20px; /* Adjust as needed */
+    padding: 20px;
 }
 
 /* Style for list items */
@@ -90,12 +93,14 @@ button:hover {
 
 /* Style for the form */
 form {
-    max-width: 400px; /* Set maximum width for the form */
+    display: flex;
+    width: fit-content; /* Set maximum width for the form */
     margin: 0 auto; /* Center-align the form */
     padding: 20px; /* Add padding around the form */
     background-color: #fff; /* White background color */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    align-items: center;
 }
 
 /* Style for form headings */
@@ -106,7 +111,7 @@ form h2 {
 
 /* Style for form inputs */
 form input[type="text"],
-form textarea {
+form textarea, form input[type="password"] {
     width: 100%; /* Set input width to 100% of the container */
     padding: 10px; /* Add padding to inputs */
     margin-bottom: 15px; /* Add spacing between inputs */
@@ -120,7 +125,7 @@ form button[type="submit"] {
     background-color: #4caf50; /* Green background color */
     border: none; /* No border */
     color: white; /* White text color */
-    padding: 10px 20px; /* Padding around the text */
+    margin: 10px 20px; /* Padding around the text */
     text-align: center; /* Center-align text */
     text-decoration: none; /* Remove underline */
     display: inline-block; /* Display as inline-block element */
@@ -133,4 +138,143 @@ form button[type="submit"] {
 /* Hover effect for the form button */
 form button[type="submit"]:hover {
     background-color: #45a049; /* Darker green background color on hover */
+}
+
+/* Styles specific to the table form */
+.table_form {
+    display: flex;
+    flex-direction: column;
+    width: auto; /* Adjust width as needed */
+    margin: 20px auto; /* Centers the form horizontally in the page */
+    padding: 15px;
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.table_form table {
+    width: 100%; /* Full width of the form */
+    border-collapse: collapse; /* Eliminates space between cells */
+    margin-top: 10px; /* Space above the table */
+}
+
+.table_form th, .table_form td {
+    padding: 10px; /* Padding inside cells */
+    text-align: center; /* Center aligns text */
+    border: 1px solid #ddd; /* Light gray border */
+    background-color: #f8f8f8; /* Very light gray background for cells */
+}
+
+.table_form th {
+    background-color: #e9ecef; /* Slightly darker shade for headers */
+    color: #495057; /* Dark gray color for text */
+    font-weight: bold;
+}
+
+.table_form td select {
+    width: 100%; /* Makes select box take up entire cell width */
+    border: 1px solid #ced4da; /* Matching border to the form inputs */
+    padding: 5px; /* Padding for select box */
+    background-color: white; /* White background for select boxes */
+    box-sizing: border-box; /* Includes padding and border in width */
+}
+
+.table_form button {
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.table_form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .table_form {
+        width: 100%; /* Full width on small screens */
+        margin: 10px;
+        padding: 10px;
+    }
+}
+.formadding{
+    display: flex;
+    flex-direction: column;
+}
+.developer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ccc; /* Добавляем горизонтальный разделитель */
+    margin-bottom: 30px; /* Увеличиваем вертикальный отступ между блоками */
+}
+
+.developer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.developer h3 {
+    margin: 0 0 4px 0;
+    color: #2aabd2;
+}
+
+.developer p {
+    flex: 1;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .developer {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none; /* Убираем разделитель для мобильных устройств */
+    }
+
+    .developer img {
+        margin-bottom: 10px;
+    }
+
+    .developer h3, .developer p {
+        text-align: center;
+    }
+}
+
+.passwordform {
+    display: flex;
+    align-items: baseline;
+    background-color: #ffffff00;
+    border-radius: 0px;
+    margin-bottom: 10px; /* Можете изменить в зависимости от вашего дизайна */
+}
+
+.passwordform input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px; /* Можете изменить в зависимости от вашего дизайна */
+}
+
+.passwordform button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.passwordform button:hover {
+    background-color: #0056b3;
 }

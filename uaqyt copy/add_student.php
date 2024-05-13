@@ -12,8 +12,9 @@
     <?php require('partials/header.php') ?>
 
     <div class="content">
-        <h2>Добавить ученика</h2>
-        <form action="" method="POST">
+        <form action="" class="formadding" method="POST">
+            <h2>Добавить ученика</h2>
+
             <label for="login">Логин:</label>
             <input type="text" id="login" name="login" required><br>
 
@@ -42,9 +43,6 @@
             <button type="submit" class="btn" name="submit">Добавить ученика</button>
         </form>
     </div>
-
-    <?php require('partials/footer.php') ?>
-
 </body>
 </html>
 

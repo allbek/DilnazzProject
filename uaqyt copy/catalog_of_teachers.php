@@ -8,32 +8,34 @@
 <body>
     <?php require('partials/globals.php'); ?>
     <?php require('partials/header.php'); ?>
-    <?php
-    $days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт'];
-    $times = ['8:30 - 9:10', '9:25 - 10:05', '10:20 - 11:00', '11:05 - 11:45', '12:05 - 12:45', '13:05 - 13:45', '13:50 - 14:30', '14:45 - 15:25', '15:40 - 16:20', '16:25 - 17:05'];
+    <div class="content">
+        <?php
+        $days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт'];
+        $times = ['8:30 - 9:10', '9:25 - 10:05', '10:20 - 11:00', '11:05 - 11:45', '12:05 - 12:45', '13:05 - 13:45', '13:50 - 14:30', '14:45 - 15:25', '15:40 - 16:20', '16:25 - 17:05'];
 
-    if (isset($_POST['teacher_id'])) {
-        $teacher_id = $_POST['teacher_id'];
-    }
-    ?>
+        if (isset($_POST['teacher_id'])) {
+            $teacher_id = $_POST['teacher_id'];
+        }
+        ?>
 
-    <form action="" method="post">
-        <label for="teacher_selector">Выберите учителя:</label>
-        <select id="teacher_selector" name="teacher_id" onchange="this.form.submit()">
-            <option value="">--Выберите учителя--</option>
-            <?php
-            $query = "SELECT userID, userfullname FROM users WHERE userstatus = 'teacher'";
-            $result = $conn->query($query);
-            while ($row = $result->fetch_assoc()) {
-                $selected = (isset($teacher_id) && $teacher_id == $row['userID']) ? 'selected' : '';
-                echo "<option value='{$row['userID']}' {$selected}>{$row['userfullname']}</option>";
-            }
-            ?>
-        </select>
-    </form>
+        <form action="" method="post">
+            <label for="teacher_selector">Выберите учителя:</label>
+            <select id="teacher_selector" name="teacher_id" onchange="this.form.submit()">
+                <option value="">--Выберите учителя--</option>
+                <?php
+                $query = "SELECT userID, userfullname FROM users WHERE userstatus = 'teacher'";
+                $result = $conn->query($query);
+                while ($row = $result->fetch_assoc()) {
+                    $selected = (isset($teacher_id) && $teacher_id == $row['userID']) ? 'selected' : '';
+                    echo "<option value='{$row['userID']}' {$selected}>{$row['userfullname']}</option>";
+                }
+                ?>
+            </select>
+        </form>
+    </div>
 
     <?php if (isset($teacher_id)): ?>
-    <form action="update_teacher_schedule.php" method="post">
+    <form action="update_teacher_schedule.php" class="table_form" method="post">
         <input type="hidden" name="teacher_id" value="<?php echo $teacher_id; ?>">
 
         <table>

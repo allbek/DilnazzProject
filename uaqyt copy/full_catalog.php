@@ -40,7 +40,7 @@
     ?>
         <button type="submit">Загрузите расписание</button>
     </form>
-    <?php if (isset($conn)) { $conn->close(); } ?>
 </div>
+<?php if (isset($conn)) { $conn->close(); } ?>
 </body>
 </html>

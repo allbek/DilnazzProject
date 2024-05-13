@@ -83,9 +83,5 @@
             }
 		?>
 	</div>
-
-    <?php require('partials/footer.php') ?>
-
 </body>
-
 </html>

@@ -26,9 +26,6 @@
             <button type="submit" class="btn" name="submit">Добавить учителя</button>
         </form>
     </div>
-
-    <?php require('partials/footer.php') ?>
-
 </body>
 </html>
 
